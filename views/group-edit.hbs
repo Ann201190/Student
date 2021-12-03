@@ -1,0 +1,13 @@
+<h1>Редактировать {{group.title}}</h1>
+
+<form action="/groups/edit" method="POST">
+  <div class="input-field">
+    <input id="name" name="name" type="text" class="validate" required value="{{group.name}}">
+    <label for="name">Наименование группы</label>
+    <span class="helper-text" data-error="Введите наименование группы"></span>
+  </div>
+
+  <input type="hidden" name="id" value="{{group.id}}">
+
+  <button class="btn btn-primary">Редактировать</button>
+</form>

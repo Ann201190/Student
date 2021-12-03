@@ -1,0 +1,39 @@
+<h1>Редактировать {{student.title}}</h1>
+
+<form action="/students/edit" method="POST">
+  <div class="input-field">
+    <input id="lastname" name="lastname" type="text" class="validate" required value="{{student.lastname}}">
+    <label for="lastname">Фамилия студента</label>
+    <span class="helper-text" data-error="Введите фамилию студента"></span>
+  </div>
+
+  <div class="input-field">
+    <input id="firstname" name="firstname" type="text" class="validate" required min="1" value="{{student.firstname}}">
+    <label for="firstname">Имя студента </label>
+    <span class="helper-text" data-error="Введите имя студента"></span>
+  </div>
+
+  <div class="input-field">
+    <input id="patronymic" name="patronymic" type="text" class="validate" required value="{{student.patronymic}}">
+    <label for="patronymic">Отчество студента</label>
+    <span class="helper-text" data-error="Введите отчество студента"></span>
+  </div>
+
+
+
+  <div class="input-field">
+    <input id="age" name="age" type="number" class="validate" required value="{{student.age}}">
+    <label for="age">Возраст студента</label>
+    <span class="helper-text" data-error="Введите возраст студента"></span>
+  </div>
+
+  <div class="input-field">
+    <input id="group" name="group" type="text" class="validate" required value="{{student.group}}">
+    <label for="group">Группа</label>
+    <span class="helper-text" data-error="Введите группу"></span>
+  </div>
+
+  <input type="hidden" name="id" value="{{student.id}}">
+
+  <button class="btn btn-primary">Редактировать</button>
+</form>

@@ -1,0 +1,48 @@
+<nav style="background: rgb(151, 230, 106);">
+  <div class="nav-wrapper ">
+    <a href="/" class="brand-logo" style="color: cornsilk;">Университет</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+      {{#if isHome}}
+      <li class="active"><a href="/">Главная</a></li>
+      {{else}}
+      <li><a href="/">Главная</a></li>
+      {{/if}}
+
+
+      {{#if isAbout}}
+      <li class="active"><a href="/about">О нас</a></li>
+      {{else}}
+      <li><a href="/about">О нас</a></li>
+      {{/if}}
+
+
+      {{#if isStudents}}
+      <li class="active"><a href="/students">Студенты</a></li>
+      {{else}}
+      <li><a href="/students">Студенты</a></li>
+      {{/if}}
+
+
+      {{#if isAdd}}
+      <li class="active"><a href="/add">Добавить студента</a></li>
+      {{else}}
+      <li><a href="/add">Добавить студента</a></li>
+      {{/if}}
+
+
+      {{#if isGroups}}
+      <li class="active"><a href="/groups">Группы </a></li>
+      {{else}}
+      <li><a href="/groups">Группы </a></li>
+      {{/if}}
+
+      {{#if isAddGroup}}
+      <li class="active"><a href="/addgroups">Добавить группу </a></li>
+      {{else}}
+      <li><a href="/addgroups">Добавить группу </a></li>
+      {{/if}}
+
+    </ul>
+  </div>
+</nav>
